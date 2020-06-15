@@ -50,6 +50,71 @@
                 grid-area: signin;
                 justify-self: center;
             }
+            .topgrid2 {
+                display: grid;
+                grid-template-rows: 40px;
+                grid-template-columns: repeat(3); 
+                align-items: start;
+                grid-template-areas: 
+                ". options .";
+            }
+            .options {
+                grid-area: options;
+                max-width: 700px;
+            }
+            .content {
+                display: grid;
+                grid-template-rows: 40px;
+                grid-template-columns: repeat(3); 
+                align-items: start;
+                grid-template-areas: 
+                ". content sidepanel";
+            }
+            #contentborder {
+                display: inline-flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid #57555445;
+                height: 40px;
+                width: fit-content;
+                border-radius: 10px;
+                flex-basis: content;
+            }
+            .footer0 {
+                display: grid;
+                grid-template-rows: 40px;
+                grid-template-columns: repeat(3); 
+                align-items: start;
+                grid-template-areas: 
+                ". footer1 .";
+                width: 1366px;
+                height: 50px;
+                background-color: rgba(230, 227, 227, 0.966);
+                font-size: 14px;
+            }
+            .footertop{
+                grid-area: footer1;
+            }
+            .footer1 {
+                display: grid;
+                grid-template-rows: 40px;
+                grid-template-columns: repeat(3); 
+                align-items: start;
+                grid-template-areas: 
+                ". footer2 .";
+                width: 1366px;
+                height: 50px;
+                background-color: rgba(230, 227, 227, 0.966);
+                font-size: 14px;
+            }
+            .footerbot{
+                grid-area: footer2;
+            }
+            .footer-color {
+                text-decoration: none;
+                color: rgb(104, 103, 103);                
+            }
         </style>
     </head>
     <body>        
@@ -63,4 +128,7 @@
             </a>
         </div>
     </body>
+    <footer>
+        
+    </footer>
 </html>
