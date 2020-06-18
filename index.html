@@ -24,12 +24,15 @@
                 border-color: rgba(255,255,255, 0);
             }
             .topgrid {
+                position: relative;
+                top: 10px;
                 display: grid;
-                grid-template-rows: 60px;
+                grid-template-rows: repeat(2 60px);
                 grid-template-columns: repeat(4); 
                 align-items: center;
                 grid-template-areas: 
-                "logo form apps signin";
+                "logo form apps signin"
+                ". options . .";
             }
             .toplogo {
                 grid-area: logo;
@@ -41,7 +44,7 @@
             }
             .topapps {
                 grid-area: apps;
-                min-width: fit-content;
+                max-width: fit-content;
                 position: relative;
                 top: 4px;
                 justify-self: end;
@@ -50,17 +53,10 @@
                 grid-area: signin;
                 justify-self: center;
             }
-            .topgrid2 {
-                display: grid;
-                grid-template-rows: 40px;
-                grid-template-columns: repeat(3); 
-                align-items: start;
-                grid-template-areas: 
-                ". options .";
-            }
             .options {
                 grid-area: options;
-                max-width: 700px;
+                padding-bottom: 40px;
+                padding-top: 15px;
             }
             .content {
                 display: grid;
@@ -88,7 +84,7 @@
                 align-items: start;
                 grid-template-areas: 
                 ". footer1 .";
-                width: 1366px;
+                width: 100%vw;
                 height: 50px;
                 background-color: rgba(230, 227, 227, 0.966);
                 font-size: 14px;
@@ -103,7 +99,7 @@
                 align-items: start;
                 grid-template-areas: 
                 ". footer2 .";
-                width: 1366px;
+                width: 100%vw;
                 height: 50px;
                 background-color: rgba(230, 227, 227, 0.966);
                 font-size: 14px;
@@ -130,18 +126,18 @@
                 <input type="button" value="Sign in" style="background-color: royalblue; color: white; padding: 8px 20px; border-radius: 5px; border: 0px; margin: 1px 1px;">
             </a>
         </div>
-        <div class="options">
-            <ul style="list-style: none; position: relative; left: 180px; word-spacing: 30px;">
+        <div class="topgrid">
+            <ul class="options" style="list-style: none; position: relative; left: 20px; word-spacing: 30px; width: 650px;">
                 <li.1>All</li>
                 <li.1>News</li>
                 <li.1>Videos</li>
                 <li.1>Maps</li>
                 <li.>Images</li>
                 <li.1>More</li>
-                <li.1 style="float: right; word-spacing: 5px;"><a href="#">Settings</a> <a href="#">Tools</a></li>
+                <li.1 style="float: inline-end; word-spacing: 5px;"><a href="#">Settings</a> <a href="#">Tools</a></li>
             </ul>
         </div>
-        <div id="results" style="width: 700px; position: relative;  left: 180px;">
+        <div id="results" style="width: 700px; position: relative;  left: 205px;">
             <article>                        
                 <a href="#">victor-lf.github.io › google-search-results</a>
                 <h1>build this webpage - GitHub Pages</h1>
@@ -257,7 +253,7 @@
                 <li>project on web design</li>
             </ul>
         </div>
-        <div id="nav-logo" style="position: relative; left: 300px;">
+        <div id="nav-logo" style="position: relative; left: 300px; width: 600px;">
             <table>
                 <thead>
                     <tr>
@@ -301,7 +297,7 @@
         </div>
     </body>
     <footer>
-        <div style="position: relative; left: 180px;">
+        <div style="position: relative; left: 205px; width: max-content;">
             <p>Zimbabwe  Vainona, Harare - From your Internet address - <a href="#">Use precise location</a> - <a href="#">Learn more</a></p>
             <p><a href="#">Help</a>     <a href="#">Send feedback</a>    <a href="#">Privacy</a>    <a href="#">Terms</a></p>
         </div>
