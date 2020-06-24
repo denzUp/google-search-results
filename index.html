@@ -142,6 +142,87 @@
             table, td, th, tr {border: 1px solid #9c9c9b57; border-collapse:seperate; border-spacing: 0; overflow: hidden; width: 700px; height: 40px;
             border-width: thin; font-family: sans-serif;
             }
+            .videogrid {
+                width: 700px;
+                display: grid;
+                grid-template-rows: 340px;
+                grid-template-columns: repeat(3, 250px, 250px, 250px);
+                grid-template-areas: "video1 video3 video2";
+                column-gap: 0px;
+                padding-bottom: 30px;
+            }
+            .video1 {
+                position: relative;
+                left: 5px;
+                grid-area: video1;
+                display: grid;
+                grid-template-rows: repeat(3, 140px 100px 90px);
+                grid-template-areas: 
+                "vid1"
+                "des1"
+                "inf1";
+                box-sizing: border-box;
+                width: 212px;
+                height: 340px;
+                padding-left: 10px;
+                border: 1px solid #9c9c9b57;
+                border-radius: 10px;
+                overflow: hidden;
+                width: 212px;
+            }
+            .vid1 {
+                grid-area: vid1;
+            }
+            .des1 {
+                grid-area: des1;
+            }
+            .inf1 {
+                grid-area: inf1;
+            }
+            .video2 {
+                grid-area: video2;
+                display: grid;
+                grid-template-rows: repeat(3, 140px 100px 90px);
+                grid-template-areas: 
+                "vid2"
+                "des2"
+                "inf2";
+                border: 1px solid #9c9c9b57;
+                border-radius: 10px;
+                overflow: hidden;
+                width: 212px;
+            }
+            .vid2 {
+                grid-area: vid2;
+            }
+            .des2 {
+                grid-area: des2;
+            }
+            .inf2 {
+                grid-area: inf2;
+            }
+            .video3 {
+                grid-area: video3;
+                display: grid;
+                grid-template-rows: repeat(3, 140px 100px 90px);
+                grid-template-areas: 
+                "vid3"
+                "des3"
+                "inf3";
+                border: 1px solid #9c9c9b57;
+                border-radius: 10px;
+                overflow: hidden;
+                width: 212px;
+            }
+            .vid3 {
+                grid-area: vid3;
+            }
+            .des3 {
+                grid-area: des3;
+            }
+            .inf3 {
+                grid-area: inf3;
+            }
         </style>
     </head>
     <body>        
@@ -165,7 +246,7 @@
                 <li.1 style="float: inline-end; word-spacing: 5px;"><a style="color: grey;" href="#">Settings</a> <a style="color: grey;" href="#">Tools</a></li>
             </ul>
         </div>
-        <div id="results" style="width: 650px; position: relative; left: 207px;">
+        <div id="results" style="width: 770px; position: relative; left: 207px;">
             <p class="greytext15px">About 84,100,000 results (0.47 seconds)</p>
             <article>                        
                 <a href="#" style="color: rgb(41, 38, 38); font-size: 15px;">victor-lf.github.io › google-search-results</a>
@@ -182,23 +263,23 @@
                 <h1><a href="#">How to Build a Website 2020 | The Complete Beginner's Guide</a></h1>
                 <p class="greytext15px"> Jun 5, 2020 - How to Build a Website: the Step-by-Step Guide to Easy Setup. We'll look at how to make a website with both a website builder and WordPress, ...</p>
             </article>
-            <ul style="list-style: none;">
-                <li.1>
-                    <a href="#" target="_blank"><video><source src="https://encrypted-vtbn1.gstatic.com/video?q=tbn:ANd9GcQW51JRF1gPbKiG_NN-StBAXhm8j0muVugBBc8rJW9tB0uBWNHa"></video><br>How to Make a Website in 10 mins - Simple & easy</a><br>
-                    <p>Website Learners</p><br>
-                    <p>YouTube - Jan 3, 2018</p>
-                </li>
-                <li.1>
-                    <a href="#" target="_blank"><video><source src="https://encrypted-vtbn2.gstatic.com/video?q=tbn:ANd9GcRSKThXdHj_7KWNMXIfXc3Wen7XsSA9aerR-gDMLzDc5jODE1uK"></video><br>How To Build a Website Without Code | Everyone Can Build a ...</a><br>
-                    <p>Roberto Blake</p><br>
-                    <p>YouTube - Nov 8, 2016</p>
-                </li>
-                <li.1>
-                    <a href="#" target="_blank"><video><source src="https://encrypted-vtbn0.gstatic.com/video?q=tbn:ANd9GcQjGmNbQOf5FebEZJcsWVDqVk18g6VhLQ8wVxOTxMYybOb7Ql5T"></video><br>Welcome to the web! (video)</a><br>
-                    <p>Khan Academy Computing</p><br>
-                    <p>Khan Academy - Mar 28, 2020</p>
-                </li>
-            </ul>
+            <div class="videogrid">
+                <div class="video1">
+                        <a href="#" target="_blank" class="vid1"><video style="width: 212px; height: 119.25px;"><source src="https://encrypted-vtbn1.gstatic.com/video?q=tbn:ANd9GcQW51JRF1gPbKiG_NN-StBAXhm8j0muVugBBc8rJW9tB0uBWNHa"></video></a>
+                        <a href="#" target="_blank" class="des1" style="position:relative; left: 10px; width: 150px; height: 90px;">How to Make a Website in 10 mins - Simple & easy</a>
+                        <p class="inf1" style="margin-top: 0px; position:relative; left: 10px;">Website Learners<br><br>YouTube - Jan 3, 2018</p>
+                </div> 
+                <div class="video3">
+                        <a href="#" target="_blank" class="vid3"><video style="width: 212px; height: 119.25px;"><source src="https://encrypted-vtbn0.gstatic.com/video?q=tbn:ANd9GcQjGmNbQOf5FebEZJcsWVDqVk18g6VhLQ8wVxOTxMYybOb7Ql5T"></video></a>
+                        <a href="#" target="_blank" class="des3" style="position:relative; left: 10px; width: 140px; height: 90px;">Welcome to the web! (video)</a>
+                        <p class="inf3" style="margin-top: 0px; position:relative; left: 10px;">Khan Academy Computing<br><br>Khan Academy - Mar 28, 2020</p>
+                </div>
+                <div class="video2">
+                    <a href="#" target="_blank" class="vid2"><video style="width: 212px; height: 119.25px;"><source src="https://encrypted-vtbn2.gstatic.com/video?q=tbn:ANd9GcRSKThXdHj_7KWNMXIfXc3Wen7XsSA9aerR-gDMLzDc5jODE1uK"></video></a>
+                    <a class="des2" href="#" target="_blank" style="position:relative; left: 10px; width: 150px; height: 90px;">How To Build a Website Without Code | Everyone Can Build a ...</a>
+                    <p class="inf2" style="margin-top: 0px; position:relative; left: 10px;">Roberto Blake<br><br>YouTube - Nov 8, 2016</p>
+                </div>
+            </div>
             <article>                        
                 <a href="#" style="color: rgb(41, 38, 38); font-size: 15px;">arstechnica.com › information-technology › 2013/07</a>
                 <h1><a href="#">With zero coding experience, artist building 180 webpages in ...</a></h1>
