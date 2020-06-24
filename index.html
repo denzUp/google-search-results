@@ -139,13 +139,13 @@
                 padding-bottom: 20px;
                 padding-top: 10px;
             }
-            table, td, th, tr {border: 1px solid #9c9c9b57; border-collapse:seperate; border-spacing: 0; overflow: hidden; width: 700px; height: 40px;
+            .table1 {border: 1px solid #9c9c9b57; border-collapse:seperate; border-spacing: 0; overflow: hidden; width: 700px; height: 40px;
             border-width: thin; font-family: sans-serif;
             }
             .videogrid {
                 width: 700px;
                 display: grid;
-                grid-template-rows: 340px;
+                grid-template-rows: 330px;
                 grid-template-columns: repeat(3, 250px, 250px, 250px);
                 grid-template-areas: "video1 video3 video2";
                 column-gap: 0px;
@@ -153,7 +153,7 @@
             }
             .video1 {
                 position: relative;
-                left: 5px;
+
                 grid-area: video1;
                 display: grid;
                 grid-template-rows: repeat(3, 140px 100px 90px);
@@ -163,8 +163,8 @@
                 "inf1";
                 box-sizing: border-box;
                 width: 212px;
-                height: 340px;
-                padding-left: 10px;
+                height: 330px;
+                padding-left: 0px;
                 border: 1px solid #9c9c9b57;
                 border-radius: 10px;
                 overflow: hidden;
@@ -178,6 +178,9 @@
             }
             .inf1 {
                 grid-area: inf1;
+                font-size: 14px;
+                color: rgb(73, 67, 67);
+                width: 210px;
             }
             .video2 {
                 grid-area: video2;
@@ -200,6 +203,9 @@
             }
             .inf2 {
                 grid-area: inf2;
+                font-size: 14px;
+                color: rgb(73, 67, 67);
+                width: 210px;
             }
             .video3 {
                 grid-area: video3;
@@ -222,6 +228,9 @@
             }
             .inf3 {
                 grid-area: inf3;
+                font-size: 14px;
+                color: rgb(73, 67, 67);
+                width: 210px;
             }
         </style>
     </head>
@@ -285,45 +294,44 @@
                 <h1><a href="#">With zero coding experience, artist building 180 webpages in ...</a></h1>
                 <p class="greytext15px">Jul 26, 2013 - One of Jennifer Dewalt's creations, this webpage lets visitors create paintings in ... Build a different website every day for 180 consecutive days.</p>
             </article>
-            <table style="margin-bottom: 40px; border-radius: 10px; font-family: sans-serif;">
-                <tr>
-                    <th style="text-align: start; position: relative; left: 20px; font-family: sans-serif; font-size: 21px; font-weight: 300; border-left: none; border-right: none; border-top: none; border-bottom: none;">People also search for</th>
+            <table class="table1" style="margin-bottom: 40px; border-radius: 10px; font-family: sans-serif;">
+                <tr class="table1">
+                    <th class="table1" style="text-align: start; position: relative; left: 20px; font-family: sans-serif; font-size: 21px; font-weight: 300; border-left: none; border-right: none; border-top: none; border-bottom: none;">People also search for</th>
                 </tr>
-                <tbody style="font-size: 17px; font-family: sans-serif; font-weight: 100;">
-                <tr>
-                    <td style="border-left: none; border-right: none;"><a style="position: relative; left: 20px; color: black;" href="#">build a website a day</a></td>
+                <tbody style="font-size: 15px; font-family: sans-serif; font-weight: 100; color: rgb(77, 77, 77);">
+                <tr class="table1">
+                    <td class="table1" style="border-left: none; border-right: none;"><a style="position: relative; left: 20px; color: black;" href="#">build a website a day</a></td>
                 </tr>
-                <tr>
-                    <td style="border-left: none; border-right: none; border-top: none;"><a style="position: relative; left: 20px; color: black;" href="#">is learning coding hard</a></td>
+                <tr class="table1">
+                    <td class="table1" style="border-left: none; border-right: none; border-top: none;"><a style="position: relative; left: 20px; color: black;" href="#">is learning coding hard</a></td>
                 </tr>
-                <tr>
-                    <td style="border-left: none; border-right: none; border-top: none;"><a style="position: relative; left: 20px; color: black;" href="#">100 days of web development</a></td>
+                <tr class="table1">
+                    <td class="table1" style="border-left: none; border-right: none; border-top: none;"><a style="position: relative; left: 20px; color: black;" href="#">100 days of web development</a></td>
                 </tr>
-                <tr>
-                    <td style="border-left: none; border-right: none; border-top: none;"><a style="position: relative; left: 20px; color: black;" href="#">best path to learn coding</a></td>
+                <tr class="table1">
+                    <td class="table1" style="border-left: none; border-right: none; border-top: none;"><a style="position: relative; left: 20px; color: black;" href="#">best path to learn coding</a></td>
                 </tr>
-                <tr>
-                    <td style="border-left: none; border-right: none; border-top: none;"><a style="position: relative; left: 20px; color: black;" href="#">can you learn to code by yourself</a></td>
+                <tr class="table1">
+                    <td class="table1" style="border-left: none; border-right: none; border-top: none;"><a style="position: relative; left: 20px; color: black;" href="#">can you learn to code by yourself</a></td>
                 </tr>
-                <tr>
-                   <td style="border-left: none; border-right: none; border-top: none; border-bottom: none;"><a style="position: relative; left: 20px; color: black;" href="#">the odin project</a></td>
+                <tr class="table1">
+                   <td class="table1" style="border-left: none; border-right: none; border-top: none; border-bottom: none;"><a style="position: relative; left: 20px; color: black;" href="#">the odin project</a></td>
                 </tr>
                 </tbody>
             </table>
-
-            <table style="margin-bottom: 30px; border-radius: 10px; font-family: sans-serif;">
-                <tr>
-                <th style="text-align: start; position: relative; left: 20px; font-family: sans-serif; font-size: 21px; font-weight: 300; border-left: none; border-right: none; border-top: none; border-bottom: none;">People also ask</th>
+            <table class="table1" style="margin-bottom: 30px; border-radius: 10px; font-family: sans-serif;">
+                <tr class="table1">
+                <th class="table1" style="text-align: start; position: relative; left: 20px; font-family: sans-serif; font-size: 21px; font-weight: 300; border-left: none; border-right: none; border-top: none; border-bottom: none;">People also ask</th>
                 </tr>
-                <tbody style="font-size: 17px; font-family: sans-serif; font-weight: 100;">
-                <tr>
-                <td style="border-left: none; border-right: none;"><a style="position: relative; left: 20px; color: black;" href="#">How can I create my own webpage?</a></td>
+                <tbody style="font-size: 15px; font-family: sans-serif; font-weight: 100; color: rgb(77, 77, 77);">
+                <tr class="table1">
+                <td class="table1" style="border-left: none; border-right: none;"><a style="position: relative; left: 20px; color: black;" href="#">How can I create my own webpage?</a></td>
                 </tr>
-                <tr>
-                <td style="border-left: none; border-right: none; border-top: none;"><a style="position: relative; left: 20px; color: black;" href="#">How much does it cost to build a website?</a></td>
+                <tr class="table1">
+                <td class="table1" style="border-left: none; border-right: none; border-top: none;"><a style="position: relative; left: 20px; color: black;" href="#">How much does it cost to build a website?</a></td>
                 </tr>
-                <tr>
-                <td style="border-left: none; border-right: none; border-top: none; border-bottom: none;"><a style="position: relative; left: 20px; color: black;" href="#">How can I create my own website for free?</a></td>
+                <tr class="table1">
+                <td class="table1" style="border-left: none; border-right: none; border-top: none; border-bottom: none;"><a style="position: relative; left: 20px; color: black;" href="#">How can I create my own website for free?</a></td>
                 </tr>
                 </tbody>
             </table>
@@ -353,32 +361,31 @@
                 <h1><a href="#">How to Create a Website: Step-by-Step Guide for Beginners ...</a></h1>
                 <p class="greytext15px">Mar 11, 2020 - Learn how to make a website and set it up. This site contains different tutorials on how to build a website using WordPress, Joomla, Drupal ...</p>
             </article>
-            <table style="width: 750px; border-radius: 10px;">
-                <tr><th colspan="7" style="text-align: left; position: relative; left:15px; border-left: none; border-right: none; border-top: none; border-bottom: none; font-family: Arial, Helvetica, sans-serif, sans-serif;
-                    font-size: 15px;
-                    color: rgb(73, 67, 67); font-weight: normal;">Related search</th></tr>
-                <tr style="height: 0;"><td colspan="7" style=" height:15px; border-left: none; border-right: none; border-top: none; border-bottom: none; position: relative; left:15px; font-family: sans-serif; font-size: 21px; font-weight: 300; color: rgb(44, 44, 44);">Best website builder</td></tr>
+            <table class="table1" style="width: 750px; border-radius: 10px;">
+                <tr class="table1"><th class="table1" colspan="7" style="text-align: left; position: relative; left:15px; border-left: none; border-right: none; border-top: none; border-bottom: none; font-family: Arial, Helvetica, sans-serif, sans-serif;
+                    font-size: 15px; color: rgb(73, 67, 67); font-weight: normal;">Related search</th></tr>
+                <tr class="table1" style="height: 0;"><td class="table1" colspan="7" style=" height:15px; border-left: none; border-right: none; border-top: none; border-bottom: none; position: relative; left:15px; font-family: sans-serif; font-size: 21px; font-weight: 300; color: rgb(44, 44, 44);">Best website builder</td></tr>
                     <tbody>
-                        <tr style="word-spacing: 20px; text-align: center; font-size: 14px; font-family: sans-serif;">
-                        <td style="border-left: none; border-right: none; border-top: none; border-bottom: none;">
+                        <tr class="table1" style="word-spacing: 20px; text-align: center; font-size: 14px; font-family: sans-serif;">
+                        <td class="table1" style="border-left: none; border-right: none; border-top: none; border-bottom: none;">
                             <a href="#"><img style="height: 77px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR255v3K75zk1w2ZqHMmME_195l5EXQjIfdFkqteEDMKGNNaIjQEgu&s=0"><br>WordPress</a>
                         </td>   
-                        <td style="border-left: none; border-right: none; border-top: none; border-bottom: none;">
+                        <td class="table1" style="border-left: none; border-right: none; border-top: none; border-bottom: none;">
                             <a href="#"><img style="height: 77px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRGCu8I_AUz6_ANRGUlutgegKepwqUU0l4UkQ7Whc2PAD70aM0O7am&s=0"><br>GoDaddy</a>
                         </td>
-                        <td style="border-left: none; border-right: none; border-top: none; border-bottom: none;">
+                        <td class="table1" style="border-left: none; border-right: none; border-top: none; border-bottom: none;">
                             <a href="#"><img style="height: 77px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9A5oLDJ1A1fM2i0ykSxFlcqSfGy4yGRecePLDb6Q5NYSFQRNn8wq7&s=0"><br>Weebly</a>
                         </td>
-                        <td style="border-left: none; border-right: none; border-top: none; border-bottom: none;">
+                        <td class="table1" style="border-left: none; border-right: none; border-top: none; border-bottom: none;">
                             <a href="#"><img style="height: 77px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFhGP8uJxKpv74GnK54FI86Fbbax1hQhGhR-3w8ly9DRjLF7xnxItK&s=0"><br>Jimbo</a>
                         </td>
-                        <td style="border-left: none; border-right: none; border-top: none; border-bottom: none;">
+                        <td class="table1" style="border-left: none; border-right: none; border-top: none; border-bottom: none;">
                             <a href="#"><img style="height: 77px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfGc6pc65t8fjKDqPWh2FUl77QcX5oBfbYOPqE&s=0"><br>Strikingly</a>
                         </td>
-                        <td style="border-left: none; border-right: none; border-top: none; border-bottom: none;">
+                        <td class="table1" style="border-left: none; border-right: none; border-top: none; border-bottom: none;">
                             <br><a style="word-spacing: normal;" href="#"><img style="height: 77px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3zwfVusEwu-csNIz2xKMcuKzPr17ExIpDlu3z&s=0">IONOS by <br> 1&1</a>
                         </td>
-                        <td style="border-left: none; border-right: none; border-top: none; border-bottom: none;">
+                        <td class="table1" style="border-left: none; border-right: none; border-top: none; border-bottom: none;">
                             <a href="#"><img style="height: 77px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnn9ZzQVENRFBu9NWVPcb2VzJv1a1NDabuUv74q9wuIu0VKk_OfR43&s=0"><br>Webnode</a>
                         </td>
                         </tr>
