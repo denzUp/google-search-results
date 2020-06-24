@@ -12,7 +12,7 @@
                 display: inline-flex;
                 flex-direction: row;
                 align-items: center;
-                justify-content: center;
+                justify-content: start;
                 border: 1px solid #57555445;
                 height: 40px;
                 width: 700px;
@@ -25,6 +25,8 @@
                 justify-self: start;
                 align-self: center;
                 border-color: rgba(255,255,255, 0);
+                position: relative;
+                left: 30px;
             }
             .topgrid {
                 position: relative;
@@ -238,10 +240,10 @@
         </style>
     </head>
     <body>        
-        <div class="topgrid">
+        <div class="topgrid" style="position: relative; top: 20px;">
             <img class="toplogo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google-homepage-logo">
             <div id="searchbox-border" class="topform">
-            <input id="searchbox" class="topform" type="search" accesskey="s"><i class="material-icons" style="position: relative; right: -50px; justify-self: end; color: royalblue;">search</i></div>
+            <input id="searchbox" class="topform" type="search" accesskey="s"><i class="material-icons" style="position: relative; right: -100px; justify-self: end; color: royalblue;">search</i></div>
             <a href="#" title="apps" class="topapps" style="color: black;"><i class="material-icons">apps</i></a>
             <a href="#" target="_blank" class="topsignin" >
                 <input type="button" value="Sign in" style="background-color: royalblue; color: white; padding: 8px 20px; border-radius: 5px; border: 0px; margin: 1px 1px;">
